@@ -102,3 +102,9 @@ header div {
   height: 100%;
   float: right;
 }
+
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
