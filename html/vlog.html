@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내알바 메모</title>
+  <title>파트타임</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/memo.css">
+  <link rel="stylesheet" href="../css/vlog.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <script src="https://kit.fontawesome.com/76ec19b47d.js" crossorigin="anonymous"></script>
@@ -39,45 +39,46 @@
       <li><a href="guide.html">알바가이드</a></li>
       <li><a href="talk.html">알바소통</a></li>
       <li><a href="vlog.html">알바로그</a></li>
-      <li><a href="mypage.html">내알바</a></li>
+      <li><a href="myalba.html">내알바</a></li>
     </ul>
   </nav>
 
   <!-- Body -->
   <div id="body__wrapper">
     <div id="body__content">
-      <!-- Top section -->
-      <section class="top_section">
-        <h4>메모</h4>
-        <div id="memo__container" class="container">
-          <table>
-            <tbody>
-              <tr>
-                <td><input type="checkbox"> 보건증 챙겨가기</td>
-              </tr><br>
-              <tr>
-                <td><input type="checkbox"> 다음달 첫째주 대타 구하기</td>
-              </tr>
-            </tbody>
-          </table>
+      <h3>알바로그</h3>
+      <ul id="search">
+        <li><select name="" id="">
+            <option value>카테고리</option>
+            <option value="1">카페</option>
+            <option value="2">의류</option>
+            <option value="3">택배</option>
+            <option value="4">pc방</option>
+          </select></li>
+        <li><select name="" id="">
+            <option value>정렬</option>
+            <option value="1">인기순</option>
+            <option value="2">최신순</option>
+            <option value="3">오래된순</option>
+            <option value="4">조회순</option>
+          </select></li>
+        <li><input type="text"></li>
+      </ul>
+      <section id="video__container">
+        <article class="video">
+          <img src="" alt="썸네일">
+          <p>택배 알바vlog</p>
+        </article>
+        <article class="video">
+          <img src="" alt="썸네일">
+          <p>카페 알바vlog</p>
+        </article>
+        <article class="video">
+          <img src="" alt="썸네일">
+          <p>pc방 알바vlog</p>
+        </article>
+      </section>
 
-        </div>
-      </section>
-      <hr>
-      <!-- down section -->
-      <section class="down_section">
-        <h4>퀴즈</h4>
-        <div id="quiz__container" class="container">
-          <div>
-            <p>Q. 플랫화이트 제조 방법은?</p>
-            <button>답보기</button>
-          </div>
-          <div>
-            <p>Q. 오픈 순서는?</p>
-            <button>답보기</button>
-          </div>
-        </div>
-      </section>
       <hr>
     </div>
     <!-- Footer -->
