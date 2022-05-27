@@ -54,6 +54,9 @@ select {
 }
 
 #calculator__result {
-  width: 100%;
+  width: 80%;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
