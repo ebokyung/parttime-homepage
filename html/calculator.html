@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내알바 급여계산기</title>
+  <link rel="stylesheet" href="../css/calculator.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="https://kit.fontawesome.com/76ec19b47d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- logo -->
+    <div id="header__logo">
+      <img src="/imgs/parttime_logo.png" alt="로고">
+    </div>
+    <!-- Search -->
+    <div id="header__search">
+      <input class="hearder__search-input" type="text">
+      <button class="hearder__search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <!-- login -->
+    <div id="header__login-icon">
+      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    </div>
+  </header>
+  <hr>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul id="navbar__link">
+      <li><a href="guide.html">알바가이드</a></li>
+      <li><a href="talk.html">알바소통</a></li>
+      <li><a href="vlog.html">알바로그</a></li>
+      <li><a href="mypage.html">내알바</a></li>
+    </ul>
+  </nav>
+
+  <!-- Body -->
+  <div id="body__wrapper">
+    <div id="body__content">
+      <!-- 알바천국 참고 -->
+      <div id="calculator__setting">
+        <select name="" id="payTypeBefore" title="급여 형태">
+          <option value="1" selected>시급</option>
+          <option value="2">일급</option>
+          <option value="3">주급</option>
+          <option value="4">월급</option>
+          <option value="5">연봉</option>
+        </select>
+        <input id="payValue" type="number" title="값을 입력하세요">원을
+        <select name="" id="payTypeAfter" title="급여 형태">
+          <option value="1">시급</option>
+          <option value="2">일급</option>
+          <option value="3">주급</option>
+          <option value="4" selected>월급</option>
+          <option value="5">연봉</option>
+        </select>
+        으로 환산하기
+      </div>
+      <div id="calculator__setup">
+        <ul id="calculator__setup-list">
+          <li id="li__perDay"><span>일일 근무시간</span>
+            <select name="" id="perDay">
+              <option value="0.5">30분</option>
+              <option value="1">1시간</option>
+              <option value="1.5">1시간 30분</option>
+              <option value="2">2시간</option>
+              <option value="2.5">2시간 30분</option>
+              <option value="3">3시간</option>
+              <option value="3.5">3시간 30분</option>
+              <option value="4">4시간</option>
+              <option value="4.5">4시간 30분</option>
+              <option value="5">5시간</option>
+              <option value="5.5">5시간 30분</option>
+            </select>
+          </li>
+          <li id="li__perWeek"><span>일주 근무일수</span>
+            <select name="" id="perWeek">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </li>
+          <li id="li__perMonthOvertime"><span>월 연장 근무시간</span>
+            <select name="" id="perMonthOvertime">
+              <option value="0.5">30분</option>
+              <option value="1">1시간</option>
+              <option value="1.5">1시간 30분</option>
+              <option value="2">2시간</option>
+              <option value="2.5">2시간 30분</option>
+              <option value="3">3시간</option>
+              <option value="3.5">3시간 30분</option>
+              <option value="4">4시간</option>
+              <option value="4.5">4시간 30분</option>
+              <option value="5">5시간</option>
+              <option value="5.5">5시간 30분</option>
+            </select>
+          </li>
+          <li class="holiday"><span>주휴수당</span>
+            <label><input type="radio">포함</label>
+            <label><input type="radio">미포함</label>
+          </li>
+          <li class="tax"><span>세금</span>
+            <select name="" id="tax">
+              <option value="0">미적용</option>
+              <option value="0.0913">9.13%</option>
+              <option value="0.0033">0.33%</option>
+            </select>
+          </li>
+        </ul>
+        <div id="calculator__setup-submit">
+          <a href="">계산하기</a>
+        </div>
+      </div>
+      <div id="calculator__result">
+        <div class="calculator__result-rows">
+          <div class="calculator__result-item"><span>예상 월급</span></div>
+          <div class="calculator__result-pay">원</div>
+        </div>
+        <div class="calculator__result-rows">
+          <div class="calculator__result-item"><span>예상 주휴수당</span></div>
+          <div class="calculator__result-pay">원</div>
+        </div>
+        <div class="calculator__result-rows">
+          <div class="calculator__result-item"><span>예상 연장수당</span></div>
+          <div class="calculator__result-pay">원</div>
+        </div>
+        <div class="calculator__result-total">
+          <div class="calculator__result-item"><span>최종 환산금액</span></div>
+          <div class="calculator__result-pay">원</div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>회사소개 광고문의 이용약관</p>
+      <p>copyright@2022Parttime. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
