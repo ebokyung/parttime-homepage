@@ -18,7 +18,7 @@ select {
 #payValue {
   width: 200px;
   height: 35px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 #calculator__setting>select {
@@ -38,6 +38,11 @@ select {
 
 #calculator__setup-list {
   list-style-type: none;
+  padding: 0;
+}
+
+#calculator__setup-list li {
+  height: 40px;
 }
 
 #calculator__setup-submit {
@@ -58,5 +63,12 @@ select {
   height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: auto;
+}
+
+.calculator__result-rows {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
 }
