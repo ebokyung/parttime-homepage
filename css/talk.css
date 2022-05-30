@@ -1,0 +1,53 @@
+.post__wrap {
+  margin-top: 50px;
+}
+
+.post {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.post a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.thumb {
+  width: 100px;
+  height: 80px;
+}
+
+.thumb img {
+  width: 100px;
+  height: 80px;
+}
+
+.title {
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  width: 120px;
+  height: 80px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #aaa;
+}
+
+.bar {
+  width: 1px;
+  height: 15px;
+  background: #aaa;
+  margin: 0 6px;
+}
