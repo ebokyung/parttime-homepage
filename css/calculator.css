@@ -26,6 +26,11 @@ select {
   height: 40px;
 }
 
+#calculator__setting>span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 #calculator__setup {
   width: 80%;
   height: 300px;

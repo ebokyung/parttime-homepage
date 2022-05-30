@@ -55,7 +55,8 @@
           <option value="4">월급</option>
           <option value="5">연봉</option>
         </select>
-        <input id="payValue" type="number" title="값을 입력하세요">원을
+        <input id="payValue" type="number" title="값을 입력하세요">
+        <span>원을</span>
         <select name="" id="payTypeAfter" title="급여 형태">
           <option value="1">시급</option>
           <option value="2">일급</option>
@@ -63,7 +64,7 @@
           <option value="4" selected>월급</option>
           <option value="5">연봉</option>
         </select>
-        으로 환산하기
+        <span>으로 환산하기</span>
       </div>
       <div id="calculator__setup">
         <ul id="calculator__setup-list">
@@ -108,8 +109,11 @@
             </select>
           </li>
           <li class="holiday"><span>주휴수당</span>
-            <label><input type="radio">포함</label>
-            <label><input type="radio">미포함</label>
+            <input type="radio" id="holidayPayYes" name="holidayPay">
+            <label for="holidayPayYes">포함</label>
+            <input type="radio" id="holidayPayNo" name="holidayPay">
+            <label for="holidayPayNo">미포함</label>
+
           </li>
           <li class="tax"><span>세금</span>
             <select name="" id="tax">
