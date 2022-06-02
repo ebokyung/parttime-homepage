@@ -6,15 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>메모 추가하기</title>
+  <script>
+    function store() {
+      let key = new Date();
+      let inputbox = document.getElementById("inputbox");
+      if (!window.localStorage) {
+        alert("로컬스토리지를 지원하지 않습니다.");
+        return;
+      }
+      localStorage.setItem(key, inputbox.value);
+      window.opener.displayList();
+      window.close();
+    }
+
+  </script>
+
 </head>
 
 <body>
   <div>
-    <span>메모내용: </span><textarea></textarea>
+    <span>메모내용: </span><textarea id="inputbox"></textarea>
   </div>
   <div>
-    <button>추가</button>
-    <button>닫기</button>
+    <button onclick="store()">추가</button>
+    <button onclick="window.close()">닫기</button>
   </div>
 </body>
 

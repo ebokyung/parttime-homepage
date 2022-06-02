@@ -14,7 +14,7 @@
   <script src="/js/memo.js"></script>
 </head>
 
-<body>
+<body onload="displayList()">
   <!-- Header -->
   <header>
     <!-- logo -->
@@ -51,13 +51,7 @@
         <h4>메모</h4>
         <div id="memo__container" class="container">
           <table>
-            <tbody>
-              <tr>
-                <td><input type="checkbox"> 보건증 챙겨가기</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"> 다음달 첫째주 대타 구하기</td>
-              </tr>
+            <tbody id="tbody__tag">
             </tbody>
           </table>
         </div>
