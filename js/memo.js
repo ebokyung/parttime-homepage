@@ -11,10 +11,19 @@ function displayList() {
   for (let i = 0; i < localStorage.length; i++) {
     let key = localStorage.key(i);
     let val = localStorage.getItem(key);
-    // console.log(key + ' : ' + val);
     tableTag.innerHTML += `<tr>
     <td><input type="checkbox"> ${val}</td>
   </tr>`
   }
 }
 
+function toggle(obj) {
+  let answer = obj.previousElementSibling;
+  if (answer.style.display !== 'none') {
+    answer.style.display = 'none';
+  }
+  else {
+    answer.style.display = 'block';
+  }
+
+}
