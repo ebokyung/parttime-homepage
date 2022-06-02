@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <script src="https://kit.fontawesome.com/76ec19b47d.js" crossorigin="anonymous"></script>
+  <script src="/js/home.js"></script>
 </head>
 
-<body>
+<body onload="displayMemo()">
   <!-- Header -->
   <header>
     <!-- logo -->
@@ -71,7 +72,11 @@
         </div>
         <!-- mypage Section -->
         <div id="mypage_container" class="right">
-          <h3>mypage
+          <h3>mypage</h3>
+          <table>
+            <tbody id="memo">
+            </tbody>
+          </table>
         </div>
       </section>
       <hr>
@@ -80,6 +85,7 @@
         <!-- HOT-vlog Section -->
         <div id="vlog_container" class="left">
           <h3>HOT 알바로그</h3>
+          <div id="vlog"></div>
         </div>
         <!-- HOT-talk Section -->
         <div id="talk_container" class="right">
