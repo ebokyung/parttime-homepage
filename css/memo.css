@@ -10,14 +10,21 @@ section {
 }
 
 .down_section {
-  height: 450px;
+  height: 550px;
 }
 
 .container {
   width: 700px;
-  height: 300px;
   overflow-y: scroll;
   margin: 0 auto;
+}
+
+#memo__container {
+  height: 300px;
+}
+
+#quiz__container {
+  height: 450px;
 }
 
 table {

@@ -68,7 +68,7 @@
           </table>
         </div>
         <div class="plus__btn">
-          <i class="fa-solid fa-circle-plus" onclick="addMemo()"></i>
+          <i class="fa-solid fa-circle-plus" onclick="openMemoPopup()"></i>
         </div>
       </section>
       <hr>
@@ -77,25 +77,32 @@
         <h4>퀴즈</h4>
         <div id="quiz__container" class="container">
           <div>
-            <p>Q. <span>플랫화이트 제조 방법은?</span></p>
+            <p>Q. 크림라떼 - 쑥라떼 - 플랫화이트 각 우유량은?</p>
+            <button onclick="toggle(this)">답보기</button>
+            <p style="display: none">100ml - 80ml - 120ml</p>
+          </div>
+          <hr>
+          <div>
+            <p>Q. 플랫화이트 제조 방법은?</p>
             <button onclick="toggle(this)">답보기</button>
             <p style="display: none">4층 - 얼음3개 > 우유120mg > 에스프레소2샷<br>5층 - 얼음4개 > 우유120mg > 에스프레소2샷</p>
           </div>
           <hr>
           <div>
-            <p>Q. <span>오픈 순서는?</span></p>
+            <p>Q. 오픈 순서는?</p>
             <button onclick="toggle(this)">답보기</button>
             <p style="display: none">4층 - 쓸닦 > 재료준비 > 음료준비<br>5층 - 불켜기(복도2개) > 문열기(비밀번호:1234) > 쓸닦 > 야외 테이블 정리</p>
           </div>
           <hr>
           <div>
-            <p>Q. <span>카푸치노 제조 방법은?</span></p>
+            <p>Q. 카푸치노 제조 방법은?</p>
             <button onclick="toggle(this)">답보기</button>
             <p style="display: none">4층 - 시나몬칩1/2 > 에스프레소2샷 > 우유만 붓고 거품 올리기 > 시나몬칩1/2</p>
           </div>
+          <hr>
         </div>
         <div class="plus__btn">
-          <i class="fa-solid fa-circle-plus" onclick="addQuiz()"></i>
+          <i class="fa-solid fa-circle-plus" onclick="openQuizPopup()"></i>
         </div>
       </section>
 
