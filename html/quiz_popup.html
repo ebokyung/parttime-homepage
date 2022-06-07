@@ -6,18 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>퀴즈 추가하기</title>
-
+  <script>
+    function store() {
+      let question = document.querySelector("#question input");
+      let answer = document.querySelector("#answer input");
+      if (!question.value) {
+        alert("질문을 입력해주세요");
+        question.focus();
+        return;
+      }
+      if (!answer.value) {
+        alert("답을 입력해주세요");
+        answer.focus();
+        return;
+      }
+      window.opener.appendQuiz(question.value, answer.value);
+      window.close();
+    }
+  </script>
 </head>
 
 <body>
-  <div>
+  <div id="question">
     <span>질문: </span><input type="text">
   </div>
-  <div>
-    <span>답: </span><input type="text">
+  <div id="answer">
+    <span>답: </span><input type="text" id="answer">
   </div>
   <div>
-    <button>추가</button>
+    <button onclick="store()">추가</button>
     <button onclick="window.close()">닫기</button>
   </div>
 </body>
