@@ -18,7 +18,7 @@ function displayList() {
 }
 
 function toggle(obj) {
-  let answer = obj.previousElementSibling;
+  let answer = obj.nextElementSibling;
   if (answer.style.display !== 'none') {
     answer.style.display = 'none';
   }
