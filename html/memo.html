@@ -32,11 +32,23 @@
   <hr>
   <!-- Navbar -->
   <nav id="navbar">
-    <ul id="navbar__link">
-      <li><a href="notice.html">공지사항</a></li>
-      <li><a href="talk.html">알바소통</a></li>
-      <li><a href="vlog.html">알바로그</a></li>
-      <li><a href="myalba.html">내알바</a></li>
+    <ul id="navbar__links">
+      <li class="link"><a href="notice.html">공지사항</a></li>
+      <li class="link dropdown">
+        <a href="talk.html">알바소통</a>
+        <div class="dropdown-content">
+          <a href="ssul.html">알바썰</a>
+          <a href="#">알바톡</a>
+        </div>
+      </li>
+      <li class="link"><a href="vlog.html">알바로그</a></li>
+      <li class="link dropdown">
+        <a href="myalba.html">내알바</a>
+        <div class="dropdown-content">
+          <a href="memo.html">메모</a>
+          <a href="calculator.html">급여계산기</a>
+        </div>
+      </li>
     </ul>
     <div id="navbar__login-icon">
       <i class="fa-solid fa-circle-user"></i>Log in
