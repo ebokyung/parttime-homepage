@@ -59,21 +59,28 @@
     <div id="body__content">
       <h3>알바로그</h3>
       <ul id="search__list">
-        <li><select name="category">
+        <li><select id="category" class="category-style">
             <option value>카테고리</option>
             <option value="1">카페</option>
             <option value="2">샌드위치</option>
             <option value="3">의류</option>
             <option value="4">택배</option>
           </select></li>
-        <li><select name="order">
+        <li><select id="order" class="category-style">
             <option value>정렬</option>
             <option value="1">인기순</option>
             <option value="2">최신순</option>
             <option value="3">오래된순</option>
             <option value="4">조회순</option>
           </select></li>
-        <li><input type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li title="검색하기">
+          <div id="search" class="category-style">
+            <input class="search-input" type="text">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </li>
       </ul>
       <section id="video__container">
         <article class="video">
