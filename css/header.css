@@ -21,16 +21,19 @@ header div {
 
 #header__search {
   width: 400px;
-  height: 38px;
+  height: 40px;
   border: 2px solid white;
+  border-radius: 15px;
   position: relative;
+  background-color: white;
 }
 
 .hearder__search-input {
   width: 350px;
   height: 38px;
   position: absolute;
-  border: 0;
+  border: none;
+  background: transparent;
 }
 
 .hearder__search-input:focus {
@@ -38,14 +41,13 @@ header div {
 }
 
 .hearder__search-btn {
-  background-color: white;
-  border: 0;
+  border: none;
+  background: transparent;
   width: 50px;
   height: 40px;
   position: absolute;
   top: 0;
   right: 0;
-
 }
 
 .hearder__search-btn i {
