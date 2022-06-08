@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <script src="https://kit.fontawesome.com/76ec19b47d.js" crossorigin="anonymous"></script>
-  <script src="/js/home.js"></script>
+  <script defer src="/js/home.js"></script>
 </head>
 
 <body onload="displayMemo()">
@@ -84,8 +84,8 @@
         </div>
         <!-- mypage Section -->
         <div id="mypage_container" class="right">
-          <h3>mypage</h3>
-          <table>
+          <h3>메모</h3>
+          <table style="width: 80%;">
             <tbody id="memo">
             </tbody>
           </table>
@@ -97,7 +97,54 @@
         <!-- HOT-vlog Section -->
         <div id="vlog_container" class="left">
           <h3>HOT 알바로그</h3>
-          <div id="vlog"></div>
+
+          <div id="video__wrap">
+            <i id="prevBtn" class="fa-solid fa-chevron-left"></i>
+            <div id="video__container">
+              <article class="video">
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/wb6_S8eCCJI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <p id="video-writer">[ ]</p>
+                <p id="video-title">서브웨이 알바vlog</p>
+              </article>
+              <article class="video">
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/hJWDyTnDlzI"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <p id="video-writer">[ ]</p>
+                <p id="video-title">의류매장 알바vlog</p>
+              </article>
+              <article class="video">
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/4JD1VZNrOI8"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <p id="video-writer">[ ]</p>
+                <p id="video-title">택배 알바vlog</p>
+              </article>
+              <article class="video">
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/AnNf_e7QIxE"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <p id="video-writer">[ ]</p>
+                <p id="video-title">의류매장 알바vlog</p>
+              </article>
+              <article class="video">
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/Cu0thff8CrE"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <p id="video-writer">[ ]</p>
+                <p id="video-title">카페 알바vlog</p>
+              </article>
+            </div>
+            <i id="nextBtn" class="fa-solid fa-chevron-right"></i>
+          </div>
+
         </div>
         <!-- HOT-talk Section -->
         <div id="talk_container" class="right">
