@@ -1,8 +1,8 @@
 function openQuizPopup() {
-  window.open("quiz_popup.html", "quiz_add", "width=400, height=200, left=200, top=100");
+  window.open("quiz_popup.html", "quiz_add", "width=400, height=200, left=500, top=100");
 }
 function openMemoPopup() {
-  window.open("memo_popup.html", "memo_add", "width=400, height=200, left=200, top=100");
+  window.open("memo_popup.html", "memo_add", "width=400, height=200, left=500, top=100");
 }
 
 function displayList() {
@@ -12,7 +12,7 @@ function displayList() {
     let key = localStorage.key(i);
     let val = localStorage.getItem(key);
     tableTag.innerHTML += `<tr>
-    <td><input type="checkbox"> ${val}</td>
+    <td><input type="checkbox">   ${val}</td>
   </tr>`
   }
 }

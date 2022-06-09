@@ -24,19 +24,65 @@
       window.close();
     }
   </script>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    #body__wrapper {
+      position: relative;
+      top: 100px;
+      left: 100px;
+      width: 400px;
+      height: 150px;
+    }
+
+    .div {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 20px;
+      width: 60px;
+    }
+
+    input {
+      width: 300px;
+      height: 22px;
+    }
+
+    button {
+      width: 40%;
+      height: 30px;
+      margin-right: auto;
+      font-size: 15px;
+      color: white;
+      background: #7096C5;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="question">
-    <span>질문: </span><input type="text">
+  <div id="body__wrapper">
+    <div id="question" class="div">
+      <span>질문: </span><input type="text">
+    </div>
+    <div id="answer" class="div">
+      <span>답: </span><input type="text" id="answer">
+    </div>
+    <div id="btns" class="div">
+      <button onclick="store()">추가</button>
+      <button onclick="window.close()">닫기</button>
+    </div>
   </div>
-  <div id="answer">
-    <span>답: </span><input type="text" id="answer">
-  </div>
-  <div>
-    <button onclick="store()">추가</button>
-    <button onclick="window.close()">닫기</button>
-  </div>
+
 </body>
 
 </html>
