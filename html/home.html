@@ -8,8 +8,6 @@
   <title>파트타임</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
   <script src="https://kit.fontawesome.com/76ec19b47d.js" crossorigin="anonymous"></script>
   <script defer src="/js/home.js"></script>
 </head>
@@ -59,32 +57,32 @@
   <div id="body__wrapper">
     <div id="body__content">
       <!-- Top section -->
-      <section class="top_section">
+      <section class="top__section">
         <!-- Info container -->
-        <div id="info_container" class="left">
-          <h3>공지사항</h3>
+        <div id="notice__container" class="left">
+          <h3><a href="notice.html" title="공지사항 보러가기">공지사항</a></h3>
           <table>
             <tr>
-              <td>공지</td>
+              <td class="notice-category nt">공지</td>
               <td>2022년 최저임금은 시급 9,160원 입니다.</td>
             </tr>
             <tr>
-              <td>공지</td>
+              <td class="notice-category nt">공지</td>
               <td>알바썰 작성 안내</td>
             </tr>
             <tr>
-              <td>이벤트</td>
+              <td class="notice-category evt">이벤트</td>
               <td>꿀알바 자랑하기 콘테스트</td>
             </tr>
             <tr>
-              <td>이벤트</td>
+              <td class="notice-category evt">이벤트</td>
               <td>출근룩 콘테스트</td>
             </tr>
           </table>
         </div>
         <!-- mypage Section -->
-        <div id="mypage_container" class="right">
-          <h3>메모</h3>
+        <div id="mypage__container" class="right">
+          <h3><a href="memo.html" title="메모 보러가기">메모</a></h3>
           <table style="width: 80%;">
             <tbody id="memo">
             </tbody>
@@ -93,10 +91,10 @@
       </section>
       <hr>
       <!-- down section -->
-      <section class="down_section">
+      <section class="bottom__section">
         <!-- HOT-vlog Section -->
-        <div id="vlog_container" class="left">
-          <h3>HOT 알바로그</h3>
+        <div id="vlog__container" class="left">
+          <h3><a href="vlog.html" title="알바로그 보러가기">HOT 알바로그</a></h3>
 
           <div id="video__wrap">
             <div id="prevBtn" class="video__btn">
@@ -104,7 +102,7 @@
             </div>
             <div id="video__container">
               <article class="video">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/wb6_S8eCCJI"
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/wb6_S8eCCJI"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -112,7 +110,7 @@
                 <p id="video-title">서브웨이 알바vlog</p>
               </article>
               <article class="video">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/hJWDyTnDlzI"
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/hJWDyTnDlzI"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -120,15 +118,16 @@
                 <p id="video-title">의류매장 알바vlog</p>
               </article>
               <article class="video">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/4JD1VZNrOI8"
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/4JD1VZNrOI8"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                  allowfullscreen>
+                </iframe>
                 <p id="video-writer">[ ]</p>
                 <p id="video-title">택배 알바vlog</p>
               </article>
               <article class="video">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/AnNf_e7QIxE"
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/AnNf_e7QIxE"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -136,10 +135,11 @@
                 <p id="video-title">의류매장 알바vlog</p>
               </article>
               <article class="video">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/Cu0thff8CrE"
+                <iframe width="280" height="160" src="https://www.youtube.com/embed/Cu0thff8CrE"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                  allowfullscreen>
+                </iframe>
                 <p id="video-writer">[ ]</p>
                 <p id="video-title">카페 알바vlog</p>
               </article>
@@ -151,8 +151,46 @@
 
         </div>
         <!-- HOT-talk Section -->
-        <div id="talk_container" class="right">
-          <h3>HOT 알바썰</h3>
+        <div id="talk__container" class="right">
+          <h3><a href="ssul.html" title="알바썰 보러가기">HOT 알바썰</a></h3>
+          <ul class="post__wrap">
+            <li class="post">
+              <a href="#">
+                <div class="thumb"><img src="/imgs/talk/편의점외국인썰.jpg" alt="이미지"></div>
+                <div class="title">
+                  <p>편의점 알바하다 외국인한테 예쁘다 소리 들은 썰</p>
+                </div>
+                <div class="info"><span class="name">000</span><span class="bar"></span><span
+                    class="time">22.05.30</span>
+                </div>
+              </a>
+            </li>
+            <hr>
+            <li class="post">
+              <a href="#">
+                <div class="thumb"></div>
+                <div class="title">
+                  <p>나 어제부터 알바 시작했는데</p>
+                </div>
+                <div class="info"><span class="name">000</span><span class="bar"></span><span
+                    class="time">22.05.27</span>
+                </div>
+              </a>
+            </li>
+            <hr>
+            <li class="post">
+              <a href="#">
+                <div class="thumb"></div>
+                <div class="title">
+                  <p>오늘 진상 손님 ...</p>
+                </div>
+                <div class="info"><span class="name">000</span><span class="bar"></span><span
+                    class="time">22.05.22</span>
+                </div>
+              </a>
+            </li>
+            <hr>
+          </ul>
         </div>
       </section>
       <hr>
