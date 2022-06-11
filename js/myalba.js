@@ -52,5 +52,4 @@ function toggle(obj) {
   else {
     answer.style.display = 'block';
   }
-
 }
