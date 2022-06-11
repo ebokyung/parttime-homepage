@@ -1,10 +1,15 @@
-.top_section {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top__section {
   width: 100%;
   height: 300px;
   display: inline-block;
 }
 
-.down_section {
+.bottom__section {
   width: 100%;
   height: 500px;
   display: inline-block;
@@ -20,6 +25,30 @@
   width: 49%;
   height: 100%;
   float: right;
+}
+
+.notice-category {
+  width: 60px;
+  text-align: center;
+}
+
+.nt {
+  color: red;
+}
+
+.evt {
+  color: blue;
+}
+
+td {
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(199, 197, 197);
+  font-size: 12px;
+}
+
+#talk__container {
+  margin: 0;
+  padding: 0;
 }
 
 #video__wrap {
@@ -62,4 +91,64 @@
 
 .video {
   margin: 10px;
+}
+
+.post__wrap {
+  margin-top: 20px;
+}
+
+.post {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  font-size: 10px;
+}
+
+.post a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.thumb {
+  width: 50px;
+  height: 30px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.thumb img {
+  width: 50px;
+  height: 30px;
+}
+
+.title {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  width: 100px;
+  height: 30px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #aaa;
+}
+
+.bar {
+  width: 1px;
+  height: 15px;
+  background: #aaa;
+  margin: 0 6px;
+}
+
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
 }
