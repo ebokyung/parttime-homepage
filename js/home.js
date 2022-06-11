@@ -10,7 +10,7 @@ function displayMemo() {
     let val = localStorage.getItem(key);
     tableTag.innerHTML += `<tr>
     <td><input type="checkbox"> ${val}</td>
-  </tr><hr>`
+  </tr>`
   }
 }
 
